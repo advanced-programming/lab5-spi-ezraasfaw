@@ -32,7 +32,7 @@ extern "C" {
     Section: Function Prototypes
 */
 void spi_init(int baud, int cpol, int cpha);
-void spi_ld_buffer();
+int spi_ld_buffer();
 
 #ifdef	__cplusplus
 }
