@@ -1,13 +1,12 @@
 /* 
- * File:   spi.h
+ * File:   application.h
  * Author: 1934089
  *
- * Created on November 23, 2021, 10:18 AM
+ * Created on December 7, 2021, 10:37 AM
  */
 
-
-#ifndef SPI_H
-#define	SPI_H
+#ifndef APPLICATION_H
+#define	APPLICATION_H
 
 #ifdef	__cplusplus
 extern "C" {
@@ -25,14 +24,14 @@ extern "C" {
 /**
     Section: Macros
 */
-#define SYS_FREQ    80000000
-#define SS    	_LATG9
+
 
 /**
     Section: Function Prototypes
 */
-void spi_init(int baud, int cpol, int cpha);
-int spi_ld_buffer();
+void rotating_line(int x1,int y1,int x2,int y2);
+void zoomin_rect(int x1,int y1,int x2,int y2);
+void loading_box(int x1,int y1,int x2,int y2);
 
 #ifdef	__cplusplus
 }

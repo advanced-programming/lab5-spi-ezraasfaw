@@ -26,7 +26,9 @@ void spi_init(int baud, int cpol, int cpha) {//SPI mode: Master, Communication m
     SPI2CONbits.MODE32 = 0;   
     SPI2CONbits.ON = 1;       // enable SPI
     
-    TRISGbits.TRISG9 =0;//SS
+    
+    TRISGbits.TRISG9 =0;// SS
+    TRISBbits.TRISB15 = 0; // D/C
 }
 
 
